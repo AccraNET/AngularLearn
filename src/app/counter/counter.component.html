@@ -1,0 +1,13 @@
+<div class="bg-fuchsia-300 p-3 rounded-sm">
+  <div class="flex justify-between">
+    <h4 class="italic font-bold text-zinc-500">Counter:</h4>
+    <p>{{ctServ.count}}</p>
+  </div>
+  
+  <p class="text-center text-black text-5xl font-bold m-3">{{count}}</p>
+  <hr>
+  <div class="flex justify-center">
+    <button class="p-2 bg-green-500 text-white rounded-md m-2" (click)="increment($event)" >Increase</button>
+    <button class="p-2 bg-red-500 text-white rounded-md m-2" (click)="decrease()">Decrease</button>
+  </div>  
+</div>

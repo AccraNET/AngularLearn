@@ -2,18 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { ToDoContainerComponent } from './to-do-container/to-do-container.component';
+import { HomeComponent } from './home/home.component';
+import { CounterComponent } from './counter/counter.component';
+import { CounterService } from './Counter.service';
 
 @NgModule({
-  declarations: [
-    ToDoContainerComponent
-  ],
+  declarations: [		
+      HomeComponent,
+      CounterComponent,
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   exports: [BrowserModule],
   providers: [],
-  bootstrap: [ToDoContainerComponent]
+  bootstrap: [HomeComponent]
 })
 export class AppModule { }
