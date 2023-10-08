@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CounterService } from '../Counter.service';
+import { sampleTime } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -10,9 +12,11 @@ export class HomeComponent implements OnInit {
 
   countService: CounterService;
 
-  constructor(countService: CounterService) { this.countService = countService }
+  constructor(countService: CounterService) { this.countService = countService, this.globalTimer = countService.countEmitter.pipe(sampleTime(5000))}
 
   ngOnInit() {
   }
+
+  globalTimer: Observable<any>;
 
 }

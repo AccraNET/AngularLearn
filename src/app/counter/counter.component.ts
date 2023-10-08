@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CounterService } from '../Counter.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-counter',
@@ -8,7 +9,7 @@ import { CounterService } from '../Counter.service';
 })
 export class CounterComponent implements OnInit {
 
-  count: number = 0;
+  public count: number = 0;
   ctServ:CounterService;
 
   constructor(ctServ: CounterService) { this.ctServ = ctServ}
@@ -16,6 +17,8 @@ export class CounterComponent implements OnInit {
   ngOnInit() {
     
   }
+
+  
 
   increment(event:any){
     console.log(event)
