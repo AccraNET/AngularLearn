@@ -6,12 +6,24 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { CounterService } from './Counter.service';
 import { ProfileComponent } from './Profile/Profile.component';
+import { ArticlesComponent } from './Articles/Articles.component';
+import { PageNotFoundComponent } from './PageNotFound/PageNotFound.component';
+import { ContainerOneComponent } from './container-one/container-one.component';
+import { ContainerTwoComponent } from './container-two/container-two.component';
+import { ContainerMainComponent } from './container-main/container-main.component';
+import { NavigationBarComponent } from './Navigation/navigation-bar/navigation-bar.component';
 
 @NgModule({
-  declarations: [			
+  declarations: [								
       HomeComponent,
       CounterComponent,
-      ProfileComponent
+      ProfileComponent,
+      ArticlesComponent,
+      PageNotFoundComponent,
+      ContainerOneComponent,
+      ContainerTwoComponent,
+      ContainerMainComponent,
+      NavigationBarComponent
    ],
   imports: [
     BrowserModule,
@@ -19,6 +31,6 @@ import { ProfileComponent } from './Profile/Profile.component';
   ],
   exports: [BrowserModule],
   providers: [],
-  bootstrap: [HomeComponent]
+  bootstrap: [ContainerMainComponent]
 })
 export class AppModule { }
