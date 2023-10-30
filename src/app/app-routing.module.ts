@@ -4,6 +4,7 @@ import { ArticlesComponent } from './Articles/Articles.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './PageNotFound/PageNotFound.component';
 import { MyProfileComponent } from './HomePages/my-profile/my-profile.component';
+import { CustomComponent } from './HomePages/custom/custom.component';
 
 const routes: Routes = [
   {
@@ -11,22 +12,27 @@ const routes: Routes = [
     component: HomeComponent,
     children:[
       {
-        path: "/home/profile",
+        path: "profile",
         component: MyProfileComponent
       },
       {
-        path: "",
-        redirectTo: './profile'
+        path: "custom",
+        component: CustomComponent
       },
       {
-        path: '**',
-        redirectTo: './profile'
+        path: "",
+        redirectTo: "profile",
+        pathMatch: 'full'
       }
     ]
   },
   {
+    path: "",
+    redirectTo: "/home",
+    pathMatch: 'full'
+  },
+  {
     path: "**",
-    pathMatch: "full",
     component: PageNotFoundComponent
   }
 ];

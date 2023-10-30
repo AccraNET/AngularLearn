@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationBarComponent implements OnInit {
 
+  navigationItems: navitems[] = [
+    {
+      name: 'Profile',
+      link: 'profile'
+    },
+    {
+      name: 'Components',
+      link: 'custom'
+    }
+  ]
+
+
   constructor() { }
 
   ngOnInit() {
   }
 
+}
+
+
+
+interface navitems{
+  link:string,
+  name:string
 }

@@ -12,6 +12,7 @@ import { ContainerOneComponent } from './container-one/container-one.component';
 import { ContainerTwoComponent } from './container-two/container-two.component';
 import { ContainerMainComponent } from './container-main/container-main.component';
 import { NavigationBarComponent } from './Navigation/navigation-bar/navigation-bar.component';
+import { CustomComponent } from './HomePages/custom/custom.component';
 
 @NgModule({
   declarations: [								
@@ -23,7 +24,8 @@ import { NavigationBarComponent } from './Navigation/navigation-bar/navigation-b
       ContainerOneComponent,
       ContainerTwoComponent,
       ContainerMainComponent,
-      NavigationBarComponent
+      NavigationBarComponent,
+      CustomComponent
    ],
   imports: [
     BrowserModule,

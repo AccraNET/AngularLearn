@@ -7,9 +7,10 @@
 
   <!-- Navigation Items-->
   <div class="h-full">
-    <ul class="flex h-full items-center space-x-2 px-2 text-white">
-      <li>Profile</li>
-      <li>Components</li>
+    <ul class="flex h-full items-center text-white">
+      <li class="w-24 border-l-2 border-solid text-sm h-full items-center flex justify-center hover:bg-[#5a4c63]" *ngFor="let item of navigationItems">
+        <a [routerLink]="item.link">{{item.name}}</a>
+      </li>
     </ul>
   </div>
 </nav>
