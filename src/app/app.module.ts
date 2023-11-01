@@ -13,6 +13,7 @@ import { ContainerTwoComponent } from './container-two/container-two.component';
 import { ContainerMainComponent } from './container-main/container-main.component';
 import { NavigationBarComponent } from './Navigation/navigation-bar/navigation-bar.component';
 import { CustomComponent } from './HomePages/custom/custom.component';
+import { LoginComponent } from './account/login/login.component';
 
 @NgModule({
   declarations: [								
@@ -25,7 +26,8 @@ import { CustomComponent } from './HomePages/custom/custom.component';
       ContainerTwoComponent,
       ContainerMainComponent,
       NavigationBarComponent,
-      CustomComponent
+      CustomComponent,
+      LoginComponent
    ],
   imports: [
     BrowserModule,

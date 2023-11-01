@@ -5,12 +5,17 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './PageNotFound/PageNotFound.component';
 import { MyProfileComponent } from './HomePages/my-profile/my-profile.component';
 import { CustomComponent } from './HomePages/custom/custom.component';
+import { LoginComponent } from './account/login/login.component';
 
 const routes: Routes = [
   {
     path: "home",
     component: HomeComponent,
     children:[
+      {
+        path: "",
+        component: MyProfileComponent
+      },
       {
         path: "profile",
         component: MyProfileComponent
@@ -25,6 +30,10 @@ const routes: Routes = [
         pathMatch: 'full'
       }
     ]
+  },
+  {
+    path: 'account/login',
+    component: LoginComponent
   },
   {
     path: "",
