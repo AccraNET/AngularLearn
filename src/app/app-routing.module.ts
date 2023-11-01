@@ -6,6 +6,7 @@ import { PageNotFoundComponent } from './PageNotFound/PageNotFound.component';
 import { MyProfileComponent } from './HomePages/my-profile/my-profile.component';
 import { CustomComponent } from './HomePages/custom/custom.component';
 import { LoginComponent } from './account/login/login.component';
+import { ChecklistComponent } from './checklist/checklist.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
       {
         path: "profile",
         component: MyProfileComponent
+      },
+      {
+        path: "checklist",
+        component: ChecklistComponent
       },
       {
         path: "custom",

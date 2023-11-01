@@ -14,9 +14,11 @@ import { ContainerMainComponent } from './container-main/container-main.componen
 import { NavigationBarComponent } from './Navigation/navigation-bar/navigation-bar.component';
 import { CustomComponent } from './HomePages/custom/custom.component';
 import { LoginComponent } from './account/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ChecklistComponent } from './checklist/checklist.component';
 
 @NgModule({
-  declarations: [								
+  declarations: [									
       HomeComponent,
       CounterComponent,
       ProfileComponent,
@@ -27,11 +29,13 @@ import { LoginComponent } from './account/login/login.component';
       ContainerMainComponent,
       NavigationBarComponent,
       CustomComponent,
-      LoginComponent
+      LoginComponent,
+      ChecklistComponent
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   exports: [BrowserModule],
   providers: [],

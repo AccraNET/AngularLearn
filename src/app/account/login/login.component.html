@@ -4,17 +4,17 @@
   </div>
   <div class="flex justify-center max-w-[40vw] w-full px-16">
     <div class="border-[#9E285C] border-solid p-4 border-2 bg-white m-auto rounded-xl w-full">
-      <form>
+      <form [formGroup]="loginForm">
         <div>
           <h2 class="text-center font-extrabold text-4xl">Welcome !</h2>
         </div>
         <div class="my-2">
           <label for="email" class="text-[#9E285C] text-sm font-bold">Email Address</label><br>
-          <input class="w-full border-black border-solid border-2 h-12" name="email" type="text">
+          <input formControlName="email" class="w-full border-black border-solid border-2 h-12" name="email" type="text">
         </div>
         <div class="my-2">
           <label for="password" class="text-[#9E285C] text-sm font-bold" >Password</label><br>
-          <input class="w-full border-black border-solid border-2 h-12" name="password" type="text">
+          <input formControlName="password" class="w-full border-black border-solid border-2 h-12" name="password" type="text">
         </div>
         <br>
         <div>
